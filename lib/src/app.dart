@@ -25,12 +25,14 @@ class AppState extends State<MyApp> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            return counter++;
+            print('pressed');
+            return counter + counter;
+
             //add on press logic here
           },
           tooltip: "This POPS up!!",
           backgroundColor: Colors.red,
-          child: const Icon(Icons.add, color: Colors.green, size: 36.0),
+          child: const Icon(Icons.add, color: Colors.green, size: 40.0),
         ),
       ),
     );
