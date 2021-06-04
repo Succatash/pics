@@ -8,6 +8,7 @@ class MyApp extends StatefulWidget {
 
 class AppState extends State<MyApp> {
   int counter = 0;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +25,7 @@ class AppState extends State<MyApp> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            print('I was pressed');
+            return counter++;
             //add on press logic here
           },
           tooltip: "This POPS up!!",
